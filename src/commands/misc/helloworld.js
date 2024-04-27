@@ -8,7 +8,7 @@ module.exports = {
 		.setName('helloworld')
 		.setDescription('Says hello!'),
 	async execute(interaction) {
-
+        console.log('hello world command was called.')
         let text = fs.readFileSync(txt, 'utf8')
         
         await interaction.reply(text)
